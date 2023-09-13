@@ -1,0 +1,58 @@
+.ftco-section {
+    padding: 7em 0;
+  }
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+.container-boarding{
+    
+    width: 672px;
+    height: 677px;
+    position: fixed;
+    top: 75px;
+    left: 282px;
+}
+
+.carousel-control-next1 {
+    position: absolute;
+    /* top: 0; */
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.carousel-control-prev1 {
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+.my-class{
+    background-color: blue;
+}

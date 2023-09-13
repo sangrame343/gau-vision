@@ -1,0 +1,92 @@
+<div class="container">
+  <div class="card shadow-lg p-5 mt-5 mb-5 ">
+    <div class="row ">
+      <div class="col-lg-6 p-3">
+        <img
+          src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=702&q=80"
+          alt=""
+        />
+      </div>
+      <div class="col-lg-6 mt-5 p-3">
+        <div class="input">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1>Welcome to <br />GAU!</h1>
+            </div>
+            <div class="col-lg-6" style="text-align: right">
+              <a class="btn btn-btn-danger" href=""><p>Skip Login</p></a>
+            </div>
+          </div>
+          <p>Welcome back! <br />You are signing in as donor.</p>
+          <div class="form-input">
+            <form [formGroup]="signInForm">
+              <div class="form-group">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Registered phone/email"
+                  formControlName="email"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <input
+                type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  value=""
+                  formControlName="password"
+                />
+                <span class="input-group-text">
+                  <i
+                    class="fa fa-eye"
+                    id="togglePassword"
+                    style="cursor: pointer"
+                  ></i>
+                </span>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Remember me</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary" (click)="login()">
+                Sign-In
+              </button>
+            </div>
+            </form>
+          </div>
+          <a routerLink="/sign-up"><p>Forgot password</p></a>
+
+          <div class="social-login text-center">
+            <a routerLink="/sign-up"><p>New user on GAU? SignUp</p></a>
+
+            <div class="d-flex flex-column">
+              <p class="text-muted mb-2 text-center">or login by</p>
+              <div class="d-flex align-items-center">
+                <a href="#" class="box me-2 selectio">
+                  <span class="fa fa-facebook-f mb-2"></span>
+                </a>
+                <a href="#" class="box me-2">
+                  <span class="fa fa-google mb-2"></span>
+                </a>
+                <a href="#" class="box">
+                  <span class="fa fa-envelope mb-2"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

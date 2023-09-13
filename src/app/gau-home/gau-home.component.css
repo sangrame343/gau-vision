@@ -1,0 +1,179 @@
+.h2, h2 {
+    font-size: 5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.btn-community {
+    background-color: white;
+    color: #162236;
+    height: 60px;
+    width: 300px;
+    border-radius: 33px;
+    padding: 15px 30px 10px 30px;
+    border: 1px solid #162236;
+    text-align: center;
+}
+
+.btn-login{
+    background-color: #162236;
+    color: white;
+    height: 60px;
+    width: 300px;
+    border-radius: 33px;
+    padding: 15px 30px 10px 30px;
+    text-align: center;
+}
+.section-counter{
+
+    height: 300px;
+    width: auto;
+    background-color: #23776D;
+}
+.row-counter{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 110px;
+
+
+}
+
+
+.hero-image{
+    max-width: 100%;
+}
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card img {
+    width: 300px;
+    height:300px important!;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+  }
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .card img {
+      height: 11em;
+    }
+  }
+  .vision{
+    height: 500px;
+    width: 700px;
+    background-color: #162236;
+  }
+  .vision-right{
+    height: auto;
+    width: 350px;
+    background-color: #d6eeff;
+  }
+
+  .vision-heading{
+    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .vision-para{
+    
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .readmore{
+text-align: right;
+  }
+
+  /* //progress bar */
+
+  @keyframes progress {
+    0% { --percentage: 0; }
+    100% { --percentage: var(--value); }
+  }
+  
+  @property --percentage {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+  
+  [role="progressbar"] {
+    --percentage: var(--value);
+    --primary: #369;
+    --secondary: #adf;
+    --size: 230px;
+    animation: progress 2s 0.5s forwards;
+    width: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+  
+  [role="progressbar"]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+  }
+  
+  [role="progressbar"]::after {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 5);
+    color: var(--primary);
+  }
+  
+ 
+  
+ 
+  
+.vision-progress{
+  position: relative;
+  left: 200px;
+  top: 100px;
+}  
+.vision-left {
+  position: relative;
+  top: 157px;
+  margin-left: 100px;
+}
+
+.avatar-img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.story-section{
+  background-color: #23776D;
+  height: auto;
+  width: auto;
+}
+.health-section {
+  margin-left: 25px;
+  margin-top: -22px;
+}

@@ -1,0 +1,33 @@
+.btn-community {
+    background-color: white;
+    color: #162236;
+    border-radius: 33px;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid #162236;;
+}
+.btn-login{
+    background-color: #162236;
+    color: white;
+    border-radius: 33px;
+    padding: 10px 30px 10px 30px;
+}
+.img-login{
+    width: 440px;
+    height: 500px;
+    border-radius: 33px
+}
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    /* left: -241px; */
+    right: 237px;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+}
